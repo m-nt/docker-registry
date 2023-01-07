@@ -1,7 +1,7 @@
 docker run -d \
-  -p $1:5000 \
+  -p $2:5000 \
   --restart=always \
-  --name $2 \
+  --name $1 \
   -v "$(pwd)"/auth:/auth \
   -e "REGISTRY_AUTH=htpasswd" \
   -e "REGISTRY_AUTH_HTPASSWD_REALM=Registry Realm" \
